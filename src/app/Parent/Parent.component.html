@@ -1,0 +1,14 @@
+<h1>Parent</h1>
+Money: {{moneydetail}} <br>
+Have Car: {{car}} <br>
+<button class='btn btn-primary' (click)="giveChildMoney(1, 10)">Give Child 1 More Money</button> &nbsp;
+<button class='btn btn-primary' (click)="giveChildMoney(2, 10)">Give Child 2 More Money</button>
+<button class='btn btn-primary' (click)="giveChildMoney(3, 10)">Give Child 3 More Money</button>
+<br>
+<br>
+<button class='btn btn-primary' (click)="backChildMoney(1)">badmash child1</button> &nbsp;
+<button class='btn btn-primary' (click)="backChildMoney(2)">badmash child2</button> &nbsp;
+<button class='btn btn-primary' (click)="backChildMoney(3)">badmash child3</button>
+<hr>
+<app-child #c1 [name]="c1Name" [parentName]="name" (valueChange)='childNeed($event)'></app-child>
+<app-child2 #c2 [name]="c2Name" [parentName]="name" (valueChange)='childNeed($event)'></app-child2>
