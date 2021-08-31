@@ -23,7 +23,7 @@ export class ParentComponent implements OnInit {
   car = 'yes';
   c1Name = 'Vani';
   c2Name = 'Rohit';
-  c3Name = 'Kartik'
+  
   @Output() valueChange = new EventEmitter();
   @ViewChild('c1') c1: ChildComponent;
   @ViewChild('c2') c2: Child2Component;
