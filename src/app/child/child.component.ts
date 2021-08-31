@@ -7,13 +7,15 @@ import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 })
 export class ChildComponent implements OnInit {
   @Input() name: string;
-  @Input() parentName: string;parentName3: string;
+  @Input() parentName: string;
   @Input() parentCount: number;
   moneydetails = 0;
   msg: string = '';
   moneydetails3 = 0;
   msg3: string = '';
   name3='Pankaj';
+  parentName3='Big Boss';
+
   @Output() valueChange = new EventEmitter<any>();
   money = 0;
   counter = 15;
