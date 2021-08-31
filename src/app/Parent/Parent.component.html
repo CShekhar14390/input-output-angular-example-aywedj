@@ -6,7 +6,7 @@ Have Car: {{car}} <br>
 <button class='btn btn-primary' (click)="giveChildMoney(3, 10)">Give Child 3 More Money</button>
 <br>
 <br>
-<select  id="select12"  class="form-control">
+<select  id="select12"  class="form-control" (change)="onChildChange($event.target.value)">
 <option value="0">How many child you have?</option>
 <option value="1">1</option>
 <option value="2">2</option>

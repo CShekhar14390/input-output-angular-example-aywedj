@@ -71,4 +71,8 @@ export class ParentComponent implements OnInit {
     }
 
   }
+  onChildChange(selectedValue:string){
+    alert(selectedValue);
+  }
+
 }
